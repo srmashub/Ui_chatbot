@@ -31,7 +31,7 @@ Reply.prototype.toJson = function() {
         case "init1": return "Hello there!";
         case "init2": return "I am the chatbot! I am still in development and I don't know much... But feel free to ask me something (please don't insult me!)";
         case "affirm": return "Ook :)";
-        case "greet":  return  "Hii Bhai!";
+        case "greet":  return "Hey, How can I help you?";
         case "restaurant_search":  return  "There are some nice restaurants around here!";
 		case "check_service": return "Doing it!";
         case "goodbye": return "Pleasure talking to you. Goodbye!";
