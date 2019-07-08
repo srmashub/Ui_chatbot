@@ -1,4 +1,3 @@
-'use strict';
 //services
 const path = require('path');
 const express = require('express');
@@ -26,7 +25,6 @@ io.on('connection', function (socket) {
   socket.emit(replyChannel, new Reply("init", JSON.parse('{"name": "init1"}'), "").toJson());
   socket.emit(replyChannel, new Reply("init", JSON.parse('{"name": "init2"}'), "").toJson());
   socket.on(messageChannel, function (message, isUser, fn) {
-    
     /*setTimeout(function(){
       fn('Message arrived to the server'); //callback function
     }, 5000);
@@ -34,17 +32,15 @@ io.on('connection', function (socket) {
       setTimeout(function(){
         sendToBot(message, socket);
       }, 10000);*/
-      
+	  
       fn('Message arrived to the server'); //callback function
-      sendToBot(message, socket);
-      
+      sendToBot(message, socket); 
   });
 
   socket.on(replyChannel, function(message, intent, feedback){
     console.log("Message: " + message +" | Intent: " +intent +" | Feedback: " + feedback);
   });
 });
-
 
 var port = 5000;
 server.listen(port, function () {
@@ -59,4 +55,4 @@ var sendToBot = function(message, socket){
       socket.emit(replyChannel, new Reply(message, intent, entities).toJson());
     }
   })
-};
+}
