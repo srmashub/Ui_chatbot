@@ -1,0 +1,81 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_goodbye
+- utter_ask_application
+- utter_ask_url
+- utter_ask_description
+- utter_solution
+- utter_thank
+- utter_deny
+- action_application
+- action_url
+- action_openapplication
+actions:
+- utter_greet
+- utter_goodbye
+- utter_ask_application
+- utter_ask_url
+- utter_ask_description
+- utter_solution
+- utter_thank
+- utter_deny
+- actions.ActionappIssue
+- actions.ActionurlIssue
+- actions.ActionopenApplication
+config:
+  store_entities_as_slots: true
+entities:
+- application
+- url
+- description
+- Issue
+intents:
+- affirm
+- inform
+- greet
+- goodbye
+- app_issue
+- url_issue
+- thank
+- bye
+- open_application
+- accept
+- deny
+slots:
+  application:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  description:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  requested_slot:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+  url:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_ask_application:
+  - text: What is the application name?
+  utter_ask_description:
+  - text: Can u provide the detail information about the issue
+  utter_ask_url:
+  - text: What is the url?
+  utter_deny:
+  - text: Sorry,I am still learning I will try to resolve your isssue better next
+      time
+  utter_goodbye:
+  - text: See u soon
+  utter_greet:
+  - text: Hey,How can I help you?
+  utter_solution:
+  - buttons:
+    - payload: 'yes'
+      title: Is that Helpful
+    - payload: 'No'
+      title: Not much information provided
+    text: Don't worry it will be forward to respective technical team
+  utter_thank:
+  - text: Thank you
+topics: []

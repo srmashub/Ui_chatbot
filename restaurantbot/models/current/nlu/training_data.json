@@ -1,0 +1,240 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "Issue",
+        "entities": [
+          {
+            "start": 3,
+            "end": 14,
+            "value": "application",
+            "entity": "Issue"
+          }
+        ],
+        "text": "My application is not working"
+      },
+      {
+        "intent": "affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "affirm",
+        "text": "yep"
+      },
+      {
+        "intent": "affirm",
+        "text": "yeah"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "good bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "stop"
+      },
+      {
+        "intent": "goodbye",
+        "text": "end"
+      },
+      {
+        "intent": "affirm",
+        "text": "indeed"
+      },
+      {
+        "intent": "affirm",
+        "text": "that's right"
+      },
+      {
+        "intent": "affirm",
+        "text": "ok"
+      },
+      {
+        "intent": "affirm",
+        "text": "great"
+      },
+      {
+        "intent": "app_issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "App",
+            "entity": "Issue"
+          }
+        ],
+        "text": "App not working"
+      },
+      {
+        "intent": "url_issue",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Url",
+            "entity": "Issue"
+          }
+        ],
+        "text": "Url not working"
+      },
+      {
+        "intent": "app_issue",
+        "entities": [
+          {
+            "start": 27,
+            "end": 38,
+            "value": "application",
+            "entity": "Issue"
+          }
+        ],
+        "text": "There is a problem with my application"
+      },
+      {
+        "intent": "url_issue",
+        "entities": [
+          {
+            "start": 27,
+            "end": 30,
+            "value": "url",
+            "entity": "Issue"
+          }
+        ],
+        "text": "There is a problem with my url"
+      },
+      {
+        "intent": "app_issue",
+        "entities": [
+          {
+            "start": 50,
+            "end": 64,
+            "value": "internet issue",
+            "entity": "description"
+          }
+        ],
+        "text": "There is a problem with my application because of internet issue"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 18,
+            "value": "Server not working",
+            "entity": "description"
+          }
+        ],
+        "text": "Server not working"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "google",
+            "entity": "application"
+          }
+        ],
+        "text": "google"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "accenture",
+            "entity": "application"
+          }
+        ],
+        "text": "accenture"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "www.google.com",
+            "entity": "url"
+          }
+        ],
+        "text": "www.google.com"
+      },
+      {
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 0,
+            "end": 17,
+            "value": "www.accenture.com",
+            "entity": "url"
+          }
+        ],
+        "text": "www.accenture.com"
+      },
+      {
+        "intent": "open_application",
+        "entities": [
+          {
+            "start": 5,
+            "end": 11,
+            "value": "google",
+            "entity": "application"
+          }
+        ],
+        "text": "open google"
+      },
+      {
+        "intent": "accept",
+        "text": "yes"
+      },
+      {
+        "intent": "deny",
+        "text": "No"
+      },
+      {
+        "intent": "open_application",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "accenture",
+            "entity": "application"
+          }
+        ],
+        "text": "open accenture"
+      }
+    ],
+    "regex_features": [],
+    "entity_synonyms": []
+  }
+}

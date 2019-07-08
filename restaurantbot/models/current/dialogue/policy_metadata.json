@@ -1,0 +1,45 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "url",
+        "description",
+        "application"
+      ]
+    },
+    "action_application": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "utter_goodbye": {
+      "slots": []
+    },
+    "action_openapplication": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "action_url": {
+      "slots": [
+        "requested_slot"
+      ]
+    },
+    "utter_thank": {
+      "slots": []
+    },
+    "utter_greet": {
+      "slots": []
+    }
+  },
+  "rasa_core": "0.9.8",
+  "max_histories": [
+    3,
+    3
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "rasa_core.policies.keras_policy.KerasPolicy"
+  ]
+}

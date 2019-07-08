@@ -1,0 +1,70 @@
+intents:
+    - affirm
+    - inform
+    - greet
+    - goodbye
+    - app_issue
+    - url_issue
+    - thank
+    - bye
+    - open_application
+    - accept
+    - deny
+
+entities:
+    - application
+    - url
+    - description
+    - Issue
+
+slots:
+    
+ application:
+  type: text
+ url:
+  type: text
+ description:
+  type: text
+ requested_slot:
+  type: unfeaturized
+    
+templates:
+    utter_greet:
+        - "Hey,How can I help you?"
+    utter_goodbye:
+        - "See u soon"
+    utter_ask_application:
+        - "What is the application name?"
+    utter_ask_url:
+        - "What is the url?"
+    utter_ask_description:
+        - "Can u provide the detail information about the issue"
+    utter_solution:
+        - text: "Don't worry it will be forward to respective technical team"
+          buttons:
+            - title: "Is that Helpful"
+              payload: "yes"
+            - title: "Not much information provided"
+              payload: "No"
+    utter_thank:
+        - "Thank you"
+    
+    utter_deny:
+        - "Sorry,I am still learning I will try to resolve your isssue better next time"
+actions:
+    - utter_greet
+    - utter_goodbye
+    - utter_ask_application
+    - utter_ask_url
+    - utter_ask_description
+    - utter_solution
+    - utter_thank
+    - utter_deny
+    - actions.ActionappIssue
+    - actions.ActionurlIssue
+    - actions.ActionopenApplication
+ #  - action_application
+ #  - action_url
+
+ 
+

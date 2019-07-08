@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\shubham.ae.sharma\\Downloads\\chatbot-node-rasa-master\\chatbot-node-rasa-master\\restaurantbot\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\shubham.ae.sharma\\Downloads\\chatbot-node-rasa-master\\chatbot-node-rasa-master\\restaurantbot\\models\\current\\nlu\\intent_classifier_tensorflow_embedding.ckpt"
